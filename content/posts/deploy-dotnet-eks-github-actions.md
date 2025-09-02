@@ -1,5 +1,5 @@
 ---
-title: ".NET to EKS with GitHub Actions: OIDC, Helm, canary"
+title: "From .NET to EKS with GitHub Actions: OIDC, Helm, canary"
 date: 2025-08-28
 description: "Secure CI/CD from GitHub to AWS: build .NET, push to ECR, deploy to EKS with Helm, wire RDS, and keep rollouts safe."
 tags: [".NET", "EKS", "GitHub Actions", "Helm", "RDS", "S3", "CI/CD", "AWS"]
