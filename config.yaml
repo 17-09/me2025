@@ -1,0 +1,123 @@
+baseURL: "https://tuyennguyen.online"
+languageCode: "en"
+title: "Tuyen Nguyen — .NET, AWS, Kubernetes"
+theme: "PaperMod"
+pagination:
+  pagerSize: 20
+enableRobotsTXT: true
+canonifyURLs: true
+enableGitInfo: true
+
+permalinks:
+  posts: "/:slug/"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+sitemap:
+  changefreq: "daily"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+params:
+  env: "production" # controls some theme behavior
+  defaultTheme: "auto"
+  DateFormat: "Jan 2, 2006"
+
+  # PaperMod UI
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  UseHugoToc: false
+  showRssButtonInSectionTermList: true
+
+  # Home intro
+  homeInfoParams:
+    Title: "Hi, I'm Tuyen"
+    Content: ".NET Lead focused on backend, infra, and AI. AWS/EKS, RDS/Redis, CI/CD, high-uptime systems, and practical trade-offs."
+
+  # Socials (shown in home/card/footer)
+  socialIcons:
+    # - name: github
+    #   url: "https://github.com/yourgithub"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/tuyen-nguyen-tech-lead/"
+    - name: email
+      url: "mailto:tuyenguyen.hust@gmail.com"
+
+  # Favicons / assets (place files under static/favicon/)
+  assets:
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/safari-pinned-tab.svg"
+
+  # Comments (giscus)
+  comments: true
+  giscus:
+    repo: "17-09/me2025"
+    repoID: "REPO_ID"
+    category: "General"
+    categoryID: "CATEGORY_ID"
+    mapping: "pathname"
+    reactionsEnabled: 1
+    emitMetadata: 0
+    inputPosition: "bottom"
+    theme: "preferred_color_scheme"
+    lang: "en"
+    loading: "lazy"
+
+menu:
+  main:
+    - name: "About"
+      url: "/about/"
+      weight: 2
+
+markup:
+  highlight:
+    noClasses: true
+    style: "dracula"
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+  goldmark:
+    renderer:
+      unsafe: true  # allow raw HTML in posts if needed
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+# Minifier options (enable at build with `hugo --minify`)
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: false
+    css:
+      keepCSS2: false
+    js:
+      keepVarNames: false
+
+# Privacy settings for embeds (defensive defaults)
+privacy:
+  youtube:
+    privacyEnhanced: true
+  instagram:
+    disabled: true
+  vimeo:
+    disabled: true
+
+# No GA; Plausible is added via partial include
+services:
+  googleAnalytics:
+    id: ""
