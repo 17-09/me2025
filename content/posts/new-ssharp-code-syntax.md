@@ -1,6 +1,6 @@
 ---
 
-title: What's New in C# 12 and 13?  
+title: What's New in C sharpt 12 and 13?  
 date: 2024-06-14  
 author: Nguyen Thanh Tuyen  
 tags: [".NET", "language features"]  
