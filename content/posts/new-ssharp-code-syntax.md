@@ -3,7 +3,7 @@
 title: What's New in C# 12 and 13?  
 date: 2024-06-14  
 author: Nguyen Thanh Tuyen  
-tags: [".NET", "C#", "language features"]  
+tags: [".NET", "language features"]  
 summary: "C# 12 is out and C# 13 is coming—see what’s new"  
 
 ---
