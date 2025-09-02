@@ -4,4 +4,4 @@
 
 [build.environment]
   HUGO_VERSION = "0.148.2"
-  HUGO_ENV = "production
+  HUGO_ENV = "production"
